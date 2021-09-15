@@ -11,8 +11,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let agentmap = L.A.agentmap(map);
 
-console.log(boundings)
-
 agentmap.buildingify(boundings, mdata)
 agentmap.agentify(50, agentmap.seqUnitAgentMaker)
 if (agentmap.state.ticks % 300 === 0) {
